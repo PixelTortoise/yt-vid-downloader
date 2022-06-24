@@ -20,3 +20,4 @@ pytube, for the great python module
 # Other info
 
 If you would like to redistribute this, feel free to, credit would be appreciated
+It only works when pytube wants to work lol
