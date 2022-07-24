@@ -21,7 +21,9 @@ Since I compiled it using py2exe (https://github.com/brentvollebregt/auto-py-to-
 # Special thanks
 
 Special thanks to:
+
 Auto py to exe: https://github.com/brentvollebregt/auto-py-to-exe
+
 Pytube: https://pypi.org/project/pytube/
 
 # Troubleshooting
