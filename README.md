@@ -16,7 +16,7 @@ add as many links as you want
 
 After running it will let you know if things went smoothly, and if it did then all the videos should showup in the newly generated "output" folder
 
-Since I compiled it using py2exe (https://github.com/brentvollebregt/auto-py-to-exe), no python or pytube installation is required
+Since I compiled it using py2exe (https://github.com/brentvollebregt/auto-py-to-exe), no python or pytube installation is required if you are using the .exe
 
 # Special thanks
 
