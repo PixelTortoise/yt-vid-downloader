@@ -15,6 +15,7 @@ if not os.path.isfile('links.txt'):
 linkstxt = open('links.txt', 'r')
 links = linkstxt.readlines()
 linkstxt.close() 
+videos = []
 
 rawfileformat = links[0]
 
@@ -37,6 +38,25 @@ else:
     sys.exit()
 
 for i in links:
+
+    try:
+    
+        p = pytube.Playlist(i)
+        print('Found {} videos from playlist "{}"'.format(p.length, p.title))
+
+        for url in p.video_urls:
+
+            videos.append(url)
+
+    except:
+
+        videos.append(i)
+
+print('Attempting to download {} videos\n'.format(len(videos)))
+taskscompleted = 0
+
+
+for i in videos:
     try:
 
         yt = pytube.YouTube(i)
@@ -76,12 +96,15 @@ for i in links:
 
         except:
 
-            print('There was an error in downloading "{}"\n'.format(yt.title))
+            print('There was an error in downloading "{}"'.format(yt.title))
             downloadsuccess = False
 
         if downloadsuccess == True:
 
-            print('{} "{}" dowloaded succesfully!\n'.format(fileformat, yt.title))
+            print('{} "{}" dowloaded succesfully!'.format(fileformat, yt.title))
+    
+    taskscompleted += 1
+    print('{} out of {} tasks completed\n'.format(taskscompleted, len(videos)))
     
 print('Done!')
 cont=input()     
