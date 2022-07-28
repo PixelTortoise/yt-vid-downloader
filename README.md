@@ -6,7 +6,7 @@ This is a super simple youtube video downloader that downloads videos in .mp3 or
 
 # How to use
 
-Run the .py or .exe file, it will generate a links.txt, you put the filetype video links, playlist links that you want to download, and if it downloads the descriptions or not the format of the file is below
+Run the .py or .exe file, it will generate a links.txt, you put the filetype video links, playlist links that you want to download, and if it downloads the descriptions or not the format of the file is below (without the spaces inbetween I can't figure out how to make it work elsewise in github lol)
 
 (file format, either mp3 or mp4)
 
