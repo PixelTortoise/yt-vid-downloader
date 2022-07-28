@@ -8,12 +8,12 @@ This is a super simple youtube video downloader that downloads videos in .mp3 or
 
 Run the .py or .exe file, it will generate a links.txt, you put the filetype video links, playlist links that you want to download, and if it downloads the descriptions or not the format of the file is below
 
-(file format, either mp3 or mp4)\n
-download_description=(true or false)\n
-links\n
-link\n
-links\n
-add as many links as you want\n
+(file format, either mp3 or mp4)
+download_description=(true or false)
+links
+links
+links
+add as many links as you want
 
 After running it will attempt to download everything, and when its done, it will say done
 
